@@ -12,15 +12,14 @@ echo""
                                ░               ░        
 
 "
-# Define GitHub token (embedded)
+
 GITHUB_TOKEN="---PASTE---TOKEN---HERE"
 
-# Define project repository name and path
 PROJECT_NAME="---YOUR--PROJECT---"
 REPO_PATH="----REPOSITORY--PATH--"
 CLONE_PATH="$REPO_PATH/PROJECTNAME"
 
-# Check if already authenticated
+
 if gh auth status &> /dev/null; then
     echo "✅ Already logged into GitHub."
 else
@@ -30,7 +29,7 @@ fi
 
 echo "📂 Checking project directory: $CLONE_PATH"
 
-# Check if the repository is already cloned
+
 if [ -d "$CLONE_PATH/.git" ]; then
     cd "$CLONE_PATH" || exit
     echo "📂 Repository found. Navigated to: $CLONE_PATH"
