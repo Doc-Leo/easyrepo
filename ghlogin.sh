@@ -56,7 +56,6 @@ else
     fi
 fi
 
-# Display GitHub status
 gh status
 ls 
 
