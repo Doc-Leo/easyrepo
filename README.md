@@ -1,3 +1,5 @@
 
 #after script configs
-chmod +x ghkraken 
+
+mv /usr/bin
+chmod +x ghkraken.sh
